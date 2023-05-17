@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    max-width: 384px;
+}   
+
+.container {
+    width: 384px;
+    position: relative;
+}
+
+.hide-section-container {
+    display: none;
+    z-index: 123;
+}
+
+.hide-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F4A79F;
+}
+
+.close-icon-container {
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 25px;
+}
+
+.hide-section-image-container {
+    width: 168px;
+}
+
+.hide-section-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.close-links {
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    width: 384px;
+}
+
+.hide-section-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#courseActionButton {
+    background: none;
+    border: none;
+}
+
+#courseActionButtonDown {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+#course-vid1 {
+    display: none;
+}
+
+#course-vid2 {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    padding: 10px;
+    border-bottom: 1px solid #F4A79F;
+    height: 64px;
+    background: white;
+}
+
+.menu-icon-container {
+    background: transparent;
+    border: none;
+    width: 17px;
+    height: 22px;
+    overflow: hidden;
+    position: absolute;
+    left: 25px;
+}
+
+.logo-container {
+    width: 168px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    position: absolute;
+    top: 64px;
+}
+
+.info-sec-1 img {
+    width: 385px;
+}
+
+.info-sec-1 h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.input {
+    border: 3px solid #374674;
+    border-radius: 4px;
+    width: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input {
+    width: 300px;
+    height: 51px;
+    padding: 1px 2px 1px 16px;
+    border: none;
+    outline: none;
+}
+
+.input input::placeholder {
+    font-size: 16px;
+}
+  
+
+.search-icon-container-helper {
+    display: inline-block;
+    position: relative;
+}
+
+.search-icon-container {
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #374674;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.search-icon-container a {
+    position: absolute;
+    top: 65%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
+span.eyeglass {
+    font-size: 40px;
+    color: white;
+}
+
+.info-sec-2 {
+    text-align: center;
+    background: #F5F5F5;
+    margin: 32px 0;
+    padding: 25px;
+} 
+
+.info-sec-2 h3 {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.info-sec-2 a {
+    display: inline-block;
+    color: white;
+    padding: 4px 14px;
+    background: #374674;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.info-sec-3 {
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.info-sec-3 h4 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.homework-help {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    width: 365px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homework-help img { 
+    width: 170px;
+    height: 170px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.homework-help h4 {
+    margin-bottom: 10px;
+}
+
+.homework-help p {
+    margin-bottom: 10px;
+}
+
+.homework-help a {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.exam-prep-and-practice {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.exam-prep-and-practice img {
+    width: 170px;
+    height: 197px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.exam-prep-and-practice h4 {
+    margin-bottom: 10px;
+}
+
+.exam-prep-and-practice p {
+    margin-bottom: 10px;
+}
+
+.exam-prep-and-practice a {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.understand-a-topic {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    width: 365px;
+    margin: auto;
+}
+
+.understand-a-topic img {
+    width: 170px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.understand-a-topic h4 {
+    margin-bottom: 10px;
+}
+
+.understand-a-topic p {
+    margin-bottom: 10px;
+}
+
+.understand-a-topic a {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.info-sec-4 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info-sec-4 p {
+    font-size: 32px;
+}
+
+.info-sec-4 a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 4px 14px;
+    background: #374674;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.footer-1 {
+    padding: 10px;
+}
+
+.pre-footer-section-info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top:20px;
+    border-top: 1px solid black
+}
+
+.pre-footer-section-button {
+    background: transparent;
+    border: none;
+}
+
+.pre-f-s-b-less {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+}
+
+.pre-f-s-b-less2 {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+}
+
+#c_f_i {
+    background: #F5F5F5;
+    display: none;
+}
+
+#c_f_i p {
+    padding: 8px;
+}
+
+#c_s_i {
+    background: #F5F5F5;
+    display: none;
+}
+
+#c_s_i p {
+    padding: 8px;
+}
+
+
+/*STYLE FOOTER BUTTONS HERE*/
+#pref_s_b_less {
+    display: none;
+}
+
+
+#pref-f-s-b-lessTwo {
+    display: none;
+}
+
+.footer {
+    margin-top: 30px;
+    background: #F5F5F5;
+    overflow: hidden;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 50px);
+    width: 380px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: auto;
+    font-size: 12px;
+    background: #F5F5F5;
+}
+
+.las_las {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-info {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 30px;
+    background: #F5F5F5;
+}
+
+.copyright-info p {
+    margin-bottom: 30px;
+}
